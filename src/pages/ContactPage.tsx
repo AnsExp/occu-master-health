@@ -71,20 +71,20 @@ const ContactPage = () => {
                         <div className="space-y-4 text-sm sm:text-base text-gray-700">
                             <div className="flex items-center space-x-3">
                                 <Mail className="w-4 h-4 text-blue-600" />
-                                <a href="mailto:info@occumasterhealth.com" className="hover:text-blue-600 transition-colors">
-                                    info@occumasterhealth.com
+                                <a href="mailto:occumasterhealt@outlook.com" className="hover:text-blue-600 transition-colors">
+                                    occumasterhealt@outlook.com
                                 </a>
                             </div>
                             <div className="flex items-center space-x-3">
                                 <Phone className="w-4 h-4 text-blue-600" />
-                                <a href="tel:+593999999999" className="hover:text-blue-600 transition-colors">
-                                    +593 99 999 9999
+                                <a href="tel:+593993191669" className="hover:text-blue-600 transition-colors">
+                                    099 319 1669
                                 </a>
                             </div>
                             <div className="flex items-center space-x-3">
                                 <MessageCircle className="w-4 h-4 text-green-600" />
                                 <a
-                                    href="https://wa.me/593999999999"
+                                    href="https://wa.me/593993191669"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="hover:text-green-600 transition-colors"

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../../public/logo.svg";
+import { SITE_NAME } from "../config";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +23,8 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center gap-2 hover:opacity-80 transition-opacity">
             <a href="#/" className="flex items-center gap-2">
               <img className="h-10 w-auto" src={logo} alt="Logo" />
-              <span className="hidden sm:inline text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
-                OccuMaster Health
+              <span className="sm:inline text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
+                {SITE_NAME}
               </span>
             </a>
           </div>

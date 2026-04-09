@@ -1,4 +1,5 @@
 import logo from '../../public/logo.svg'
+import { SITE_NAME } from "../config";
 
 export default function Footer() {
     return (
@@ -12,7 +13,7 @@ export default function Footer() {
                             className="h-10 w-auto"
                         />
                         <span className="ml-2 text-lg font-semibold text-white">
-                            OccuMaster Health
+                            {SITE_NAME}
                         </span>
                     </div>
 
@@ -26,18 +27,24 @@ export default function Footer() {
                         <a href="#/contact" className="hover:text-white">
                             Contacto
                         </a>
+                        <a href="#/plans" className="hover:text-white">
+                            Planes
+                        </a>
+                        <a href="#/reports" className="hover:text-white">
+                            Denuncias
+                        </a>
                     </div>
 
                     <div className="space-y-2">
                         <p className="text-white font-semibold">Contáctanos</p>
-                        <p>Email: <a href="mailto:info@occumasterhealth.com" className="hover:text-white">info@occumasterhealth.com</a></p>
-                        <p>Teléfono: <a href="tel:+593999999999" className="hover:text-white">+593 99 999 9999</a></p>
+                        <p>Email: <a href="mailto:occumasterhealt@outlook.com" className="hover:text-white">occumasterhealt@outlook.com</a></p>
+                        <p>Teléfono: <a href="tel:+593993191669" className="hover:text-white">099 319 1669</a></p>
                         <p>Dirección: Av. Principal 123, Guayaquil, Ecuador</p>
                     </div>
                 </div>
 
                 <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400">
-                    © {new Date().getFullYear()} OccuMaster Health. Todos los derechos reservados.
+                    © {new Date().getFullYear()} {SITE_NAME}. Todos los derechos reservados.
                 </div>
             </div>
         </footer>

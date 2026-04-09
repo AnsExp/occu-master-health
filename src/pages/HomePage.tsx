@@ -1,5 +1,6 @@
 import { ArrowRight, CheckCircle, Briefcase, Users, Shield, TrendingUp } from 'lucide-react';
 import Card from '../components/Card';
+import { SITE_NAME } from "../config";
 
 export default function HomePage() {
     return (
@@ -114,7 +115,7 @@ export default function HomePage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
                             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                                ¿Por qué elegir Occu Master Health?
+                                ¿Por qué elegir {SITE_NAME}?
                             </h2>
                             <ul className="space-y-4">
                                 <li className="flex gap-4">

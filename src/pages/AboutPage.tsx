@@ -1,5 +1,6 @@
 import { Heart, Target, Lightbulb, Users, CheckCircle, ArrowRight } from 'lucide-react';
 import Card from '../components/Card';
+import { SITE_NAME } from "../config";
 
 export default function AboutPage() {
     const values = [
@@ -32,7 +33,7 @@ export default function AboutPage() {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto">
                         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-                            Sobre Occu Master Health
+                            Sobre {SITE_NAME}
                         </h1>
                         <p className="text-lg text-gray-700 leading-relaxed">
                             Una empresa fundada por médicos especialistas con pasión por transformar
@@ -89,7 +90,7 @@ export default function AboutPage() {
                     <div className="max-w-3xl mx-auto">
                         <Card>
                             <p className="text-gray-700 leading-relaxed mb-4">
-                                <strong>Occu Master Health</strong> nace de la visión de dos médicos especialistas
+                                <strong>{SITE_NAME}</strong> nace de la visión de dos médicos especialistas
                                 en medicina ocupacional que identificaron una brecha importante en el mercado ecuatoriano:
                                 la falta de servicios integrales, especializados y de calidad en salud ocupacional.
                             </p>
