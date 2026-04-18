@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
-@theme {
+:root {
+  --color-logo-dark: #18283d;
+  --color-logo-light: #7eb1ca;
+}
+
+/* @theme {
 --breakpoint-md: 920px;
+} */
+
+html {
+  scroll-behavior: smooth;
 }

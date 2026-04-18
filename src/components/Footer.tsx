@@ -2,6 +2,14 @@ import logo from '../../public/logo.svg'
 import { SITE_NAME } from "../config";
 
 export default function Footer() {
+    const navLinks = [
+        { href: "/", label: "Inicio" },
+        { href: "/about", label: "Nosotros" },
+        { href: "/services", label: "Servicios" },
+        { href: "/contact", label: "Contacto" },
+        { href: "/plans", label: "Planes" },
+        { href: "/reports", label: "Denuncias" },
+    ];
     return (
         <footer className="bg-gray-900 text-gray-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -18,21 +26,11 @@ export default function Footer() {
                     </div>
 
                     <div className="flex flex-col space-y-2">
-                        <a href="#/about" className="hover:text-white">
-                            Nosotros
-                        </a>
-                        <a href="#/services" className="hover:text-white">
-                            Servicios
-                        </a>
-                        <a href="#/contact" className="hover:text-white">
-                            Contacto
-                        </a>
-                        <a href="#/plans" className="hover:text-white">
-                            Planes
-                        </a>
-                        <a href="#/reports" className="hover:text-white">
-                            Denuncias
-                        </a>
+                        {navLinks.map((link) => (
+                            <a key={link.href} href={link.href} className="hover:text-white">
+                                {link.label}
+                            </a>
+                        ))}
                     </div>
 
                     <div className="space-y-2">

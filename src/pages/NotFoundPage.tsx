@@ -2,6 +2,16 @@ import { ArrowLeft, Home, Search, Stethoscope } from "lucide-react";
 import Card from "../components/Card";
 
 export default function NotFoundPage() {
+
+    const navLinks = [
+        { href: "/", label: "Inicio" },
+        { href: "/about", label: "Nosotros" },
+        // { href: "/services", label: "Servicios" },
+        { href: "/contact", label: "Contacto" },
+        // { href: "/plans", label: "Planes" },
+        // { href: "/reports", label: "Denuncias" },
+    ];
+
     return (
         <main className="min-h-[70vh] bg-gradient-to-br from-blue-50 to-blue-100">
             <section className="max-w-6xl mx-auto px-4 py-14 sm:py-20">
@@ -47,34 +57,16 @@ export default function NotFoundPage() {
                             </p>
 
                             <div className="mt-6 space-y-3 text-left">
-                                <a
-                                    href="#/"
-                                    className="flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-3 text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-700"
-                                >
-                                    <Search className="w-4 h-4" />
-                                    Inicio
-                                </a>
-                                <a
-                                    href="#/services"
-                                    className="flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-3 text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-700"
-                                >
-                                    <Search className="w-4 h-4" />
-                                    Servicios
-                                </a>
-                                <a
-                                    href="#/about"
-                                    className="flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-3 text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-700"
-                                >
-                                    <Search className="w-4 h-4" />
-                                    Nosotros
-                                </a>
-                                <a
-                                    href="#/contact"
-                                    className="flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-3 text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-700"
-                                >
-                                    <Search className="w-4 h-4" />
-                                    Contacto
-                                </a>
+                                {navLinks.map((link) => (
+                                    <a
+                                        key={link.href}
+                                        href={link.href}
+                                        className="flex items-center gap-2 rounded-lg bg-gray-50 px-4 py-3 text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-700"
+                                    >
+                                        <Search className="w-4 h-4" />
+                                        {link.label}
+                                    </a>
+                                ))}
                             </div>
                         </div>
                     </Card>

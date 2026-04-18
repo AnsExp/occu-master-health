@@ -1,5 +1,6 @@
 import { AlertTriangle, ShieldCheck, FileText, Lock } from "lucide-react";
 import Card from "../components/Card";
+import { SITE_NAME } from "../config";
 
 const ReportsPage = () => {
     return (
@@ -12,7 +13,7 @@ const ReportsPage = () => {
                     Compromiso con la integridad y la calidad del servicio
                 </h1>
                 <p className="mt-4 max-w-3xl text-gray-600 leading-relaxed text-base sm:text-lg">
-                    En Occu Master Health tomamos cada reporte con total seriedad. Nuestro equipo evalua
+                    En {SITE_NAME} tomamos cada reporte con total seriedad. Nuestro equipo evalua
                     todas las denuncias de forma objetiva, confidencial y oportuna para proteger a las
                     personas y fortalecer la calidad de nuestros servicios.
                 </p>

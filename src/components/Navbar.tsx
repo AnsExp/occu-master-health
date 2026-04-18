@@ -7,12 +7,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: "#/", label: "Inicio" },
-    { href: "#/about", label: "Nosotros" },
-    { href: "#/services", label: "Servicios" },
-    { href: "#/contact", label: "Contacto" },
-    { href: "#/plans", label: "Planes" },
-    { href: "#/reports", label: "Denuncias" },
+    { href: "/", label: "Inicio" },
+    { href: "#services", label: "Servicios" },
+    { href: "#specialities", label: "Especialidades" },
+    { href: "#companies", label: "Empresas" },
+    { href: "#plans", label: "Planes" },
+    { href: "#about", label: "Nosotros" },
+    { href: "#contact", label: "Contacto" },
   ];
 
   return (
@@ -21,7 +22,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <a href="#/" className="flex items-center gap-2">
+            <a href="/" className="flex items-center gap-2">
               <img className="h-10 w-auto" src={logo} alt="Logo" />
               <span className="sm:inline text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
                 {SITE_NAME}

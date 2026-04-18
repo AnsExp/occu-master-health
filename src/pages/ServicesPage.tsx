@@ -84,23 +84,8 @@ const ServicesPage = () => {
 
     return (
         <>
-            {/* Hero Section */}
-            <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-16 sm:py-20">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="text-center max-w-3xl mx-auto">
-                        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-                            Nuestros Servicios de Medicina Ocupacional
-                        </h1>
-                        <p className="text-lg text-gray-700 leading-relaxed">
-                            Ofrecemos soluciones integrales y especializadas en medicina ocupacional
-                            para empresas que priorizan la salud y seguridad de sus colaboradores.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            {/* Services Grid */}
-            <section className="py-16 sm:py-20">
+            <section className="px-4 py-14 sm:py-16">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-blue-600">Nuestros servicios</p>
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                         {services.map((service) => {
