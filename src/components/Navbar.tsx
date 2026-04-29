@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: "/", label: "Inicio" },
+    { href: "#", label: "Inicio" },
     { href: "#services", label: "Servicios" },
     { href: "#specialities", label: "Especialidades" },
     { href: "#companies", label: "Empresas" },
@@ -17,14 +17,14 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-lg border-b border-gray-100">
+    <nav className="sticky top-0 z-50 border-b border-secondary/20 bg-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <a href="/" className="flex items-center gap-2">
+            <a href="#" className="flex items-center gap-2">
               <img className="h-10 w-auto" src={logo} alt="Logo" />
-              <span className="sm:inline text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
+              <span className="sm:inline text-xl font-bold text-primary">
                 {SITE_NAME}
               </span>
             </a>
@@ -36,7 +36,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="px-4 py-2 rounded-lg text-gray-700 font-medium transition-all duration-200 hover:bg-blue-50 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="rounded-lg px-4 py-2 font-medium text-dark transition-all duration-200 hover:bg-light hover:text-secondary focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
               >
                 {link.label}
               </a>
@@ -48,7 +48,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200"
+              className="inline-flex items-center justify-center rounded-lg p-2 text-dark transition-all duration-200 hover:bg-light hover:text-secondary focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
               aria-expanded="false"
             >
               <span className="sr-only">Abrir menú</span>
@@ -68,13 +68,13 @@ export default function Navbar() {
           isOpen ? "max-h-100 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-gradient-to-b from-white to-blue-50 border-t border-gray-100 px-4 py-3 space-y-1">
+        <div className="space-y-1 border-t border-secondary/20 bg-gradient-to-b from-white to-light px-4 py-3">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="block px-4 py-3 rounded-lg text-gray-700 font-medium transition-all duration-200 hover:bg-blue-100 hover:text-blue-600 active:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              className="block rounded-lg px-4 py-3 font-medium text-dark transition-all duration-200 hover:bg-secondary/15 hover:text-secondary active:bg-secondary/25 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
             >
               {link.label}
             </a>

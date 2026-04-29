@@ -40,23 +40,25 @@ export default function About() {
 
     return (
         <section className="px-4 py-14 sm:py-16">
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-10">
+            <div className="rounded-3xl border border-secondary/20 bg-white p-6 shadow-sm sm:p-10">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
 
                     {/* Columna izquierda */}
                     <div className="space-y-6">
                         <div className="space-y-4">
-                            <p className="text-xs font-semibold uppercase tracking-[0.24em]" style={{ color: '#18283d' }}>Quiénes Somos</p>
-                            <h2 className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">
+                            <p className="inline-flex w-fit rounded-full bg-light px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">
+                                Quienes Somos
+                            </p>
+                            <h2 className="text-3xl font-bold leading-tight text-primary sm:text-4xl">
                                 Nacimos para elevar el estándar de la salud en Ecuador
                             </h2>
-                            <p className="text-base leading-7 text-slate-600">
+                            <p className="text-base leading-7 text-dark">
                                 OccuMaster Health es un centro de atención médica ambulatoria especializado en servicios de salud integral, con enfoque tanto clínico como ocupacional. Nace de la iniciativa de dos médicos que, al identificar la necesidad de mejorar la calidad en la atención, decidieron unir su experiencia para desarrollar un modelo de atención basado en la excelencia, la responsabilidad y el compromiso genuino con la salud.
                             </p>
-                            <p className="text-base leading-7 text-slate-600">
+                            <p className="text-base leading-7 text-dark">
                                 Nuestra institución está orientada a brindar servicios médicos confiables, oportunos y de calidad, dirigidos tanto a pacientes particulares como al sector empresarial. Contamos con dos áreas claramente definidas: la atención clínica y la salud ocupacional, cada una desarrollada con enfoque especializado.
                             </p>
-                            <p className="text-base leading-7 text-slate-600">
+                            <p className="text-base leading-7 text-dark">
                                 No somos un proveedor de trámites médicos: somos aliados estratégicos en la construcción de entornos laborales seguros, saludables y productivos. Proyectamos consolidarnos como el centro médico ambulatorio líder en salud ocupacional del Ecuador para el año 2030.
                             </p>
                         </div>
@@ -64,9 +66,9 @@ export default function About() {
                         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                             {aboutValues.map((value) => (
                                 <Card key={value.title}>
-                                    <p className="text-base font-semibold text-slate-900">{value.title}</p>
+                                    <p className="text-base font-semibold text-primary">{value.title}</p>
                                     {value.description && (
-                                        <p className="mt-1 text-sm leading-6 text-slate-600">{value.description}</p>
+                                        <p className="mt-1 text-sm leading-6 text-dark">{value.description}</p>
                                     )}
                                 </Card>
                             ))}
@@ -75,17 +77,17 @@ export default function About() {
 
                     {/* Columna derecha */}
                     <div className="flex flex-col gap-5">
-                        <div className="relative rounded-2xl border border-slate-700/50 bg-gradient-to-br from-slate-900 to-slate-950 p-6 shadow-xl sm:p-8">
-                            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-600/10 to-transparent pointer-events-none" />
+                        <div className="relative rounded-2xl border border-secondary/30 bg-gradient-to-br from-dark to-primary p-6 shadow-xl sm:p-8">
+                            <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-secondary/15 via-accent/10 to-transparent" />
                             <div className="relative space-y-4">
                                 {aboutPillars.map((pillar, index) => (
-                                    <div key={pillar.title} className={index > 0 ? 'border-t border-slate-700/50 pt-5' : ''}>
+                                    <div key={pillar.title} className={index > 0 ? 'border-t border-light/20 pt-5' : ''}>
                                         <div className="flex items-start gap-3">
-                                            <div className="mt-1 h-1 w-1 rounded-full bg-blue-500 flex-shrink-0" />
+                                            <div className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
                                             <div>
-                                                <p className="text-xs font-bold uppercase tracking-[0.24em] text-blue-400">{pillar.title}</p>
+                                                <p className="text-xs font-bold uppercase tracking-[0.24em] text-secondary">{pillar.title}</p>
                                                 {pillar.content && (
-                                                    <p className="mt-2.5 text-sm leading-7 text-slate-300">{pillar.content}</p>
+                                                    <p className="mt-2.5 text-sm leading-7 text-light/90">{pillar.content}</p>
                                                 )}
                                             </div>
                                         </div>

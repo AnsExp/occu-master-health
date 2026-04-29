@@ -2,16 +2,18 @@ import { Briefcase, CheckCircle, MapPin, Shield } from "lucide-react";
 
 function Metrics() {
     return (
-        <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 py-14 sm:py-16">
+        <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-gradient-to-br from-dark via-dark to-primary py-14 sm:py-16">
             <div className="mx-auto max-w-7xl px-4">
-                <div className="rounded-3xl border border-slate-700/80 bg-slate-900/70 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur sm:p-10">
+                <div className="rounded-3xl border border-secondary/25 bg-dark/80 p-6 shadow-2xl shadow-dark/40 backdrop-blur sm:p-10">
                     <div className="mx-auto max-w-3xl space-y-4 text-center">
-                        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-blue-400">¿Por qué OccuMaster Health?</p>
-                        <h2 className="text-3xl font-bold leading-tight text-slate-100 sm:text-4xl">
+                        <p className="inline-flex w-fit rounded-full border border-secondary/25 bg-light/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-secondary">
+                            ¿Por qué OccuMaster Health?
+                        </p>
+                        <h2 className="text-3xl font-bold leading-tight text-light sm:text-4xl">
                             Calidad, agilidad y confianza
                         </h2>
-                        <p className="text-base leading-7 text-slate-300 sm:text-lg">
-                            Una institucion fundada por medicos comprometidos con la excelencia clinica y el bienestar real de pacientes y clientes empresariales.
+                        <p className="text-base leading-7 text-light/90 sm:text-lg">
+                            Una institución fundada por médicos comprometidos con la excelencia clínica y el bienestar real de pacientes y clientes empresariales.
                         </p>
                     </div>
 
@@ -19,8 +21,8 @@ function Metrics() {
                         {[
                             {
                                 value: '2',
-                                title: 'Areas especializadas',
-                                description: 'Salud clinica y salud ocupacional integradas bajo un mismo modelo de gestion.',
+                                title: 'Áreas especializadas',
+                                description: 'Salud clínica y salud ocupacional integradas bajo un mismo modelo de gestión.',
                                 icon: Briefcase,
                             },
                             {
@@ -31,14 +33,14 @@ function Metrics() {
                             },
                             {
                                 value: '30+',
-                                title: 'Especialidades medicas',
-                                description: 'Staff de profesionales certificados para cubrir necesidades clinicas integrales.',
+                                title: 'Especialidades médicas',
+                                description: 'Staff de profesionales certificados para cubrir necesidades clínicas integrales.',
                                 icon: CheckCircle,
                             },
                             {
                                 value: 'Cobertura',
                                 title: 'Guayaquil y sectores',
-                                description: 'Unidades moviles para sectores industrial, maritimo, agricola y servicios.',
+                                description: 'Unidades móviles para sectores industrial, marítimo, agrícola y servicios.',
                                 icon: MapPin,
                             },
                         ].map((item) => {
@@ -46,16 +48,16 @@ function Metrics() {
                             return (
                                 <article
                                     key={item.title}
-                                    className="group rounded-2xl border border-slate-700 bg-slate-800/60 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400/50 hover:bg-slate-800"
+                                    className="group rounded-2xl border border-light/20 bg-dark/70 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-secondary/45 hover:bg-dark"
                                 >
                                     <div className="mb-4 flex items-center justify-between">
-                                        <span className="text-3xl font-bold text-blue-400">{item.value}</span>
-                                        <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-blue-400 ring-1 ring-slate-700">
+                                        <span className="text-3xl font-bold text-secondary">{item.value}</span>
+                                        <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-light/10 text-accent ring-1 ring-accent/35">
                                             <Icon className="h-5 w-5" />
                                         </span>
                                     </div>
-                                    <h3 className="text-lg font-semibold text-slate-100">{item.title}</h3>
-                                    <p className="mt-2 text-sm leading-6 text-slate-400">{item.description}</p>
+                                    <h3 className="text-lg font-semibold text-light">{item.title}</h3>
+                                    <p className="mt-2 text-sm leading-6 text-light/75">{item.description}</p>
                                 </article>
                             );
                         })}
