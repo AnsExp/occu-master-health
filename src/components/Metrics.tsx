@@ -1,6 +1,32 @@
 import { Briefcase, CheckCircle, MapPin, Shield } from "lucide-react";
 
 function Metrics() {
+    const metrics = [
+        {
+            value: '2',
+            title: 'Áreas especializadas',
+            description: 'Salud clínica y salud ocupacional integradas bajo un mismo modelo de gestión.',
+            icon: Briefcase,
+        },
+        {
+            value: '100%',
+            title: 'Cumplimiento normativo',
+            description: 'Fichas y certificados alineados a IESS, SART y Ministerio de Trabajo.',
+            icon: Shield,
+        },
+        {
+            value: '30+',
+            title: 'Especialidades médicas',
+            description: 'Staff de profesionales certificados para cubrir necesidades clínicas integrales.',
+            icon: CheckCircle,
+        },
+        {
+            value: 'Cobertura',
+            title: 'Guayaquil y sectores',
+            description: 'Unidades móviles para sectores industrial, marítimo, agrícola y servicios.',
+            icon: MapPin,
+        },
+    ];
     return (
         <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-gradient-to-br from-dark via-dark to-primary py-14 sm:py-16">
             <div className="mx-auto max-w-7xl px-4">
@@ -18,32 +44,7 @@ function Metrics() {
                     </div>
 
                     <div className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
-                        {[
-                            {
-                                value: '2',
-                                title: 'Áreas especializadas',
-                                description: 'Salud clínica y salud ocupacional integradas bajo un mismo modelo de gestión.',
-                                icon: Briefcase,
-                            },
-                            {
-                                value: '100%',
-                                title: 'Cumplimiento normativo',
-                                description: 'Fichas y certificados alineados a IESS, SART y Ministerio de Trabajo.',
-                                icon: Shield,
-                            },
-                            {
-                                value: '30+',
-                                title: 'Especialidades médicas',
-                                description: 'Staff de profesionales certificados para cubrir necesidades clínicas integrales.',
-                                icon: CheckCircle,
-                            },
-                            {
-                                value: 'Cobertura',
-                                title: 'Guayaquil y sectores',
-                                description: 'Unidades móviles para sectores industrial, marítimo, agrícola y servicios.',
-                                icon: MapPin,
-                            },
-                        ].map((item) => {
+                        {metrics.map((item) => {
                             const Icon = item.icon;
                             return (
                                 <article
