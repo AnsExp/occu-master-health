@@ -1,1 +1,1 @@
-export const SITE_NAME = 'OccuMaster Health';
+export const SITE_NAME = 'San Agustín';

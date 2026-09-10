@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../../public/logo.svg";
 import { SITE_NAME } from "../config";
 
 export default function Navbar() {
@@ -23,7 +22,6 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2 hover:opacity-80 transition-opacity">
             <a href="#" className="flex items-center gap-2">
-              <img className="h-10 w-auto" src={logo} alt="Logo" />
               <span className="sm:inline text-xl font-bold text-primary">
                 {SITE_NAME}
               </span>

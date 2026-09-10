@@ -1,5 +1,5 @@
 import {
-    ArrowRight,
+    // ArrowRight,
     Phone,
 } from "lucide-react";
 
@@ -35,18 +35,18 @@ const Contact = () => {
                                         <Phone className="h-4 w-4" />
                                         WhatsApp
                                     </a>
-                                    <a
+                                    {/* <a
                                         href="mailto:occumasterhealt@outlook.com"
                                         className="group inline-flex items-center justify-center gap-2 rounded-lg border border-secondary/35 bg-secondary/15 px-6 py-3 text-sm font-semibold text-light transition-all hover:border-secondary hover:bg-secondary/25 focus:outline-none focus:ring-2 focus:ring-secondary/60"
                                     >
                                         <ArrowRight className="h-4 w-4" />
                                         Correo
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                         </div>
 
-                        <div className="rounded-2xl border border-light/20 bg-dark/70 p-6 sm:p-7">
+                        {/* <div className="rounded-2xl border border-light/20 bg-dark/70 p-6 sm:p-7">
                             <h3 className="mb-6 text-lg font-bold text-light">Envíe su consulta</h3>
                             <form className="space-y-4">
                                 <div>
@@ -83,7 +83,7 @@ const Contact = () => {
                                     Enviar consulta
                                 </button>
                             </form>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
